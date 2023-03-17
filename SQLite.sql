@@ -1,0 +1,10 @@
+CREATE table myfirstlab(studentid number(10), firstname varchar(15), lastname varchar(15),phone number (11),email varchar (20),city varchar(10));
+desc myfirstlab;
+insert into table values(001, 'Ala', 'Yusef', 0504563218, 'ayusef@jazanu.edu.sa', 'jazan');
+select * from myfirstlab;
+alter table myfirstlab add (address varchar(20));
+alter table myfirstlab add (age number(10), country varchar(20));
+alter table myfirstlab modify(email varchar(10));
+alter table myfirstlab rename column phone to mobile;
+alter table myfirstlab drop column city;
+truncate table myfirstlab;
